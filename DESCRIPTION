@@ -1,0 +1,19 @@
+Package: Rrcc
+Type: Package
+Title: Robust Continuous Clustering
+Version: 0.1.0
+Author: Who wrote it
+Description: Wrapper to a Python implementation of robust continuous clustering (RCC). RCC is a powerful algorithm that achieves high accuracy across domains, can handle high data dimensionality, and scales well to large datasets.   
+Maintainer: Dirk U. Wulff <dirk.wulff@gmail.com>
+Authors@R: c(
+    person(c("Dirk","U."), "Wulff", role= "cre",
+            email= "dirk.wulff@gmail.com",
+            comment = c(ORCID = "0000-0002-4008-8022"))
+    )
+URL: https://github.com/dwulff/Rrcc
+License: MIT + file LICENSE
+Encoding: UTF-8
+Depends: R (>= 3.5.0)
+Imports: reticulate
+LazyData: true
+RoxygenNote: 7.2.1
