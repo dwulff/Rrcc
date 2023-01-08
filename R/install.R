@@ -9,13 +9,6 @@
 #'
 #' @examples
 #' \dontrun{
-#' # setup -----
-#'
-#' # create and set environment
-#' reticulate::conda_create("r-reticulate")
-#' reticulate::use_condaenv("r-reticulate")
-#'
-#' # install rcc dependencies
 #' install_rcc_dependencies()
 #'}
 #'

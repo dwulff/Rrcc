@@ -2,3 +2,4 @@
 
 export(install_rcc_dependencies)
 export(rcc)
+export(setup_rcc_environment)

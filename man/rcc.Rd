@@ -10,7 +10,8 @@ rcc(
   measure = c("euclidean", "cosine"),
   clustering_threshold = 1.1,
   eps = 1e-05,
-  verbose = FALSE
+  verbose = FALSE,
+  conda = NULL
 )
 }
 \arguments{
@@ -25,6 +26,8 @@ rcc(
 \item{eps}{numerical epsilon used for computation. Defaults to \code{1e-05}.}
 
 \item{verbose}{logical controlling the presentation of optimization statistics.}
+
+\item{conda}{name of an existing conda environment. If \code{NULL} (the default) the function will either use the currently active environment or create and activate a new one.}
 }
 \value{
 \code{rcc} returns an integer vector of length \code{nrow(data)} containing the cluster assignments.
@@ -34,26 +37,15 @@ rcc(
 }
 \details{
 \code{rcc} is a wrapper around the Python \code{pyrcc} implementation by Yann Henon (\href{https://github.com/yhenon/pyrcc}{github.com/yhenon/pyrcc}).
+
+\code{rcc} depends on the python libraries, numpy and scipy. To run the \code{rcc} function, the dependencies must be made available within a conda environment. If a conda environment is active, it wil be used. Alternatively, a conda environment name can be supplied via the \code{conda} argument or a new environment can be created and activated by the function.
 }
 \examples{
-\dontrun{
-# setup -----
-
-# create and set environment
-reticulate::conda_create("r-reticulate")
-reticulate::use_condaenv("r-reticulate")
-
-# install rcc dependencies
-install_rcc_dependencies()
-
-# run rcc -----
-
 # numeric variables in iris
 iris_numerics = c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width")
 
 # run rcc
 clusters <- rcc(iris[,iris_numerics])
-}
 
 }
 \references{

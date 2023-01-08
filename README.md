@@ -4,7 +4,7 @@
 
 An R implementation of Robust Continuous Clustering
 
-R wrapper for a Python implementation of robust continuous clustering (RCC) created by Yann Henon yhenon/pyrcc](https://github.com/yhenon/pyrcc). RCC is a powerful clustering algorithm that achieves high accuracy across domains, can handle high data dimensionality, and scales well to large datasets. For details see the original publication by Shah and Koltun ([2017](https://www.pnas.org/doi/10.1073/pnas.1700770114))   
+R wrapper for a Python implementation of robust continuous clustering (RCC) created by Yann Henon [yhenon/pyrcc](https://github.com/yhenon/pyrcc). RCC is a powerful clustering algorithm that achieves high accuracy across domains, can handle high data dimensionality, and scales well to large datasets. For details see the original publication by Shah and Koltun ([2017](https://www.pnas.org/doi/10.1073/pnas.1700770114))   
 
 ## General Information
 
