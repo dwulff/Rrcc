@@ -20,23 +20,27 @@ The latest development version on GitHub can be installed via `devtools::install
 
 Rrcc works best within a miniconda environment. The code below firses uses `reticulate` functions to install `miniconda`, creates a conda environment named `"r-reticulate"`, and activates it. The `Rrcc` function `install_rcc_dependencies()` is then used to install python dependencies, namely `scipy` and `numpy>= 1.6`. 
 
-  # install miniconda
-  reticulate::install_miniconda()
-  
-  # create and set environment
-  reticulate::conda_create("r-reticulate")
-  reticulate::use_condaenv("r-reticulate")
-  
-  # install rcc dependencies
-  install_rcc_dependencies()
-  
+```R
+# install miniconda
+reticulate::install_miniconda()
+
+# create and set environment
+reticulate::conda_create("r-reticulate")
+reticulate::use_condaenv("r-reticulate")
+
+# install rcc dependencies
+install_rcc_dependencies()
+```
+
 The code below runs robust continuous clustering using the packages `rcc()` function for the four numerical variables in the iris dataset. The `rcc()` function has several arguments to control the behavior of the clustering algrithm. 
 
-  # numeric variables in iris
-  iris_numerics = c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width")
-  
-  # run rcc
-  clusters <- rcc(iris[,iris_numerics])
+```R
+# numeric variables in iris
+iris_numerics = c("Sepal.Length", "Sepal.Width", "Petal.Length", "Petal.Width")
+
+# run rcc
+clusters <- rcc(iris[,iris_numerics])
+```
 
 ## Citation
 
