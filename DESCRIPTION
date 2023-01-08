@@ -3,7 +3,7 @@ Type: Package
 Title: Robust Continuous Clustering
 Version: 0.1.0
 Author: Who wrote it
-Description: Wrapper to a Python implementation of robust continuous clustering (RCC). RCC is a powerful algorithm that achieves high accuracy across domains, can handle high data dimensionality, and scales well to large datasets.   
+Description: Wrapper for a Python implementation of robust continuous clustering (RCC). RCC is a powerful clustering algorithm that achieves high accuracy across domains, can handle high data dimensionality, and scales well to large datasets.   
 Maintainer: Dirk U. Wulff <dirk.wulff@gmail.com>
 Authors@R: c(
     person(c("Dirk","U."), "Wulff", role= "cre",

@@ -5,7 +5,7 @@ pyrcc <- NULL
 .onAttach <- function(libname, pkgname){
 
   # ask for miniconda install
-  packageStartupMessage("Rcc Version 0.1.0.\n\nRrcc runs best with miniconda. Install using reticulate::install_miniconda(). Downloads 50MB and takes some time.")
+  packageStartupMessage("Rcc Version 0.1.0.\n\nRrcc works best with miniconda. Install using reticulate::install_miniconda(). Downloads 50MB and takes some time.")
 
 }
 
